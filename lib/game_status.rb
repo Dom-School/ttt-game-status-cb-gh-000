@@ -17,7 +17,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     combo.each do |index|
-      puts "Position: #{index}"
+      puts "Position: #{board[index]}"
     end
+    puts "--------------"
   end
 end
