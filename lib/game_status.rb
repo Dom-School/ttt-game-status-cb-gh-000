@@ -18,5 +18,6 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     combo.each do |index|
       puts "Position: #{index}"
+    end
   end
 end
