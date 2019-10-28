@@ -16,11 +16,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    combo.each do |cell|
-      if board[combo[cell]] == "X" || board[combo[cell]] == "O"
-        return true
-      end
-    end
+    combo.each do |index|
+      puts "Position: #{index}"
   end
-  return false
 end
