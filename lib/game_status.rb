@@ -23,3 +23,9 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all? do |cell|
+    cell.position_taken?
+  end
+end
