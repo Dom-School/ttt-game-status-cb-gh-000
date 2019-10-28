@@ -16,9 +16,9 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    combo.each do |index|
-      puts "Position: #{board[index]}"
+    if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X") || 
+        (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
+        return true
     end
-    puts "--------------"
   end
 end
